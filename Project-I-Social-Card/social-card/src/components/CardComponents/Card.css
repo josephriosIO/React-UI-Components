@@ -15,3 +15,7 @@ a {
 .card-content {
   margin-left: 6rem;
 }
+
+.card-content .card-content-link {
+  color: lightgrey;
+}
