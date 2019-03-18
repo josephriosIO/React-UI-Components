@@ -4,13 +4,13 @@
   width: 1000px;
 }
 
-.top-content img {
-  margin-top: 15px;
-  margin-left: 20px;
-  width: 55px;
-  height: 55px;
-  border: 1px solid black;
-  border-radius: 50%;
+.top-content .logo-header {
+  margin-left: 15px;
+  background-image: url("./lambdalogo.png");
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .top-content .header-content {
