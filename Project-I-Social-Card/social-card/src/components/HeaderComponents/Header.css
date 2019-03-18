@@ -1,7 +1,7 @@
 /* All styles for your header Components live here */
 .top-content {
   display: flex;
-  border: 1px solid black;
+  width: 1000px;
 }
 
 .top-content img {
@@ -10,7 +10,12 @@
   height: 60px;
 }
 
+.top-content .header-content {
+  margin-bottom: 20px;
+}
+
 .top-content .header-content h4 {
+  margin-left: 10px;
   color: grey;
 }
 
