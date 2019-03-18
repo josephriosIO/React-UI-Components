@@ -9,3 +9,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.social-card .social-holder {
+  border: 1px solid black;
+  padding-right: 50px;
+}

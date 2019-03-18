@@ -20,8 +20,10 @@ const App = () => {
         </strong>
       </p>
       <div className="social-card">
-        <HeaderContainer />
-        <CardContainer />
+        <div className="social-holder">
+          <HeaderContainer />
+          <CardContainer />
+        </div>
       </div>
     </div>
   );
