@@ -18,6 +18,10 @@
   margin-left: 20px;
 }
 
+.top-content .header-content p {
+  margin: 0;
+}
+
 .top-content .header-content .header-titles {
   display: flex;
 }
@@ -25,5 +29,5 @@
 .top-content .header-content .header-titles p {
   margin-top: 21px;
   padding-left: 15px;
-  color: lightgrey;
+  color: #a1aeb9;
 }
