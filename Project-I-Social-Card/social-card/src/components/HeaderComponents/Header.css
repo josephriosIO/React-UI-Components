@@ -1,1 +1,19 @@
 /* All styles for your header Components live here */
+.top-content {
+  display: flex;
+  border: 1px solid black;
+}
+
+.top-content img {
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.top-content .header-content h4 {
+  color: grey;
+}
+
+.top-content .header-content p {
+  margin: 10px;
+}
