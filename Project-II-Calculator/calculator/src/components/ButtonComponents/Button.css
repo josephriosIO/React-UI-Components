@@ -9,10 +9,15 @@
 
 .red {
   background: #a0001e;
+  color: white;
 }
 
 .box h3 {
   font-size: 2.5rem;
+}
+
+.red h3 {
+  font-size: 3.5rem;
 }
 
 .long-box {
