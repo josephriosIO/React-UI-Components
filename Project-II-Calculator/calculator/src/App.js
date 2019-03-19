@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import NumberButton from "./components/ButtonComponents/NumberButton";
 import ActionButton from "./components/ButtonComponents/ActionButton";
@@ -56,29 +56,49 @@ const symbols = [
   }
 ];
 
-const App = () => {
-  return (
-    <div>
-      <h1 className="title">Calculator App</h1>
-      <div className="calculator">
-        <div className="boxes">
-          <CalculatorDisplay />
-          <div className="number-boxes">
-            <ActionButton />
-            {numbers.map(number => (
-              <NumberButton numberProp={number} />
-            ))}
-            <BottomActionButton />
-          </div>
-          <div className="symbol-boxes">
-            {symbols.map(symbol => (
-              <SymbolButtons symbolProp={symbol} />
-            ))}
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      input: ""
+    };
+  }
+
+  addToInput = val => {
+    this.setState({ input: this.state.input + val });
+  };
+
+  render() {
+    return (
+      <div>
+        <h1 className="title">Calculator App</h1>
+        <div className="calculator">
+          <div className="boxes">
+            <CalculatorDisplay input={this.state.input} />
+            <div className="number-boxes">
+              <ActionButton handleClear={() => this.setState({ input: "" })} />
+              {numbers.map(number => (
+                <NumberButton
+                  handleClick={this.addToInput}
+                  numberProp={number}
+                />
+              ))}
+              <BottomActionButton handleClick={this.addToInput} />
+            </div>
+            <div className="symbol-boxes">
+              {symbols.map(symbol => (
+                <SymbolButtons
+                  handleClick={this.addToInput}
+                  symbolProp={symbol}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default App;
