@@ -1,0 +1,22 @@
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 510px;
+  width: 448px;
+  border: 1px solid #979797;
+}
+
+.number-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 510px;
+  width: 336px;
+}
