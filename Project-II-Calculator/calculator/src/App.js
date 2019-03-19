@@ -40,10 +40,10 @@ const numbers = [
 
 const symbols = [
   {
-    symbol: "%"
+    symbol: "÷"
   },
   {
-    symbol: "X"
+    symbol: "×"
   },
   {
     symbol: "-"
