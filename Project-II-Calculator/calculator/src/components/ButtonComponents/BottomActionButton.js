@@ -3,9 +3,9 @@ import "./Button.css";
 
 const ButtonActionButton = props => {
   return (
-    <div className="long-box">
+    <button className="long-box">
       <h3>0</h3>
-    </div>
+    </button>
   );
 };
 
