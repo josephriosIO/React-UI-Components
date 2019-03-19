@@ -5,6 +5,8 @@ import ActionButton from "./components/ButtonComponents/ActionButton";
 import BottomActionButton from "./components/ButtonComponents/BottomActionButton";
 import SymbolButtons from "./components/ButtonComponents/SymbolButtons";
 import CalculatorDisplay from "./components/DisplayComponents/CalculatorDisplay";
+import EqualsButton from "./components/ButtonComponents/EqualsButton";
+import * as math from "mathjs";
 
 const numbers = [
   {
@@ -40,19 +42,16 @@ const numbers = [
 
 const symbols = [
   {
-    symbol: "÷"
+    symbol: "/"
   },
   {
-    symbol: "×"
+    symbol: "*"
   },
   {
     symbol: "-"
   },
   {
     symbol: "+"
-  },
-  {
-    symbol: "="
   }
 ];
 
@@ -67,6 +66,10 @@ class App extends Component {
 
   addToInput = val => {
     this.setState({ input: this.state.input + val });
+  };
+
+  handleEqual = () => {
+    this.setState({ input: math.eval(this.state.input) });
   };
 
   render() {
@@ -93,6 +96,7 @@ class App extends Component {
                   symbolProp={symbol}
                 />
               ))}
+              <EqualsButton handleClick={() => this.handleEqual()} />
             </div>
           </div>
         </div>
