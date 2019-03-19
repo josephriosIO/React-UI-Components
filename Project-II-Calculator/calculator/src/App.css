@@ -1,3 +1,9 @@
+.title {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
 .calculator {
   display: flex;
   align-items: center;

@@ -59,7 +59,7 @@ const symbols = [
 const App = () => {
   return (
     <div>
-      <h1>Calculator App</h1>
+      <h1 className="title">Calculator App</h1>
       <div className="calculator">
         <div className="boxes">
           <CalculatorDisplay />
