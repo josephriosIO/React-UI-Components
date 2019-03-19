@@ -5,6 +5,7 @@
 }
 
 .boxes {
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
