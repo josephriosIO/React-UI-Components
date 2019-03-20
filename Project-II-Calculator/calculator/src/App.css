@@ -1,0 +1,29 @@
+.title {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.calculator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 510px;
+  width: 448px;
+}
+
+.number-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 510px;
+  width: 330px;
+}
